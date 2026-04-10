@@ -8,6 +8,8 @@ mod tests {
     fn slice_out_of_array() {
         let a = [1, 2, 3, 4, 5];
 
+        let len = a.len();
+        let nice_slice = &a[1..len - 1];
         // TODO: Get a slice called `nice_slice` out of the array `a` so that the test passes.
         // let nice_slice = ???
 

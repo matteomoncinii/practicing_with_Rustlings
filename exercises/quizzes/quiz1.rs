@@ -16,6 +16,13 @@ fn main() {
     // You can optionally experiment here.
 }
 
+fn calculate_price_of_apples(qty: i8) -> i8 {
+    let unit_price = if qty > 40 { 1 } else { 2 };
+    let price = qty * unit_price;
+
+    price
+}
+
 // Don't change the tests!
 #[cfg(test)]
 mod tests {
